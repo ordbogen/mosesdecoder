@@ -254,8 +254,6 @@ sub tokenize
       $text =~ s,\Q$protected[$i], $subst ,g;
     }
     $text =~ s/ +/ /g;
-    $text =~ s/^ //g;
-    $text =~ s/ $//g;
 
     # seperate out all "other" special characters
     $text =~ s/([^\p{IsAlnum}\s\.\'\`\,\-])/ $1 /g;
